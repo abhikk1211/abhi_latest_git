@@ -1,0 +1,23 @@
+  <Router>
+      <Routes>
+            <Route  path="/Navbar" element={<Navbar/>}/>
+            <Route  path="/Alert" element={<Alert/>}/>        
+            <Route  path="/" element={<TextForm/>}/>
+      </Routes>
+      </Router>
+
+      <Router>
+        <Routes>
+          <Route>
+              <Navbar title="PatentTextUtils" mode={mode} reverseMode={reverseMode} toggleMode={toggleMode}></Navbar>
+          </Route>
+          <Route>
+               <Alert alert={alert} ></Alert>
+          </Route>
+          <Route  path="/">
+                <TextForm heading='Enter the text to analyzed' mode={mode} reverseMode={reverseMode} toggleMode={toggleMode} showAlert={showAlert}/>
+          </Route>
+      
+        </Routes>
+      </Router>
+      
